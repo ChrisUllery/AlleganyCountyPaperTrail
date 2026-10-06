@@ -1,0 +1,6 @@
+.venv/
+.idea/
+__pycache__/
+*.pyc
+*.bak
+assets/documents/luke-mill/raw/
