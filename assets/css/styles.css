@@ -828,3 +828,40 @@ body.modal-open {
     }
 }
 
+
+/* LOCAL HERO BACKGROUND TEST */
+.hero {
+    background-image: linear-gradient(rgba(243, 241, 236, 0.72), rgba(243, 241, 236, 0.72)), url('../images/acpt-background.webp');
+    background-size: cover;
+    background-position: center 55%;
+    background-repeat: no-repeat;
+}
+.hero-inner {
+    position: relative;
+}
+
+/* LOCAL SITE BACKGROUND TEST */
+body {
+    background: linear-gradient(180deg, #fff7ef 0%, #f8eee5 45%, #ffffff 100%);
+}
+.document-hero {
+    background-image: linear-gradient(rgba(243, 241, 236, 0.72), rgba(243, 241, 236, 0.72)), url('../images/acpt-background.webp');
+    background-size: cover;
+    background-position: center 55%;
+    background-repeat: no-repeat;
+}
+.section,
+.document-archive {
+    background: transparent;
+}
+
+/* LOCAL DEEP ORANGE GRADIENT TEST */
+body {
+    background: linear-gradient(
+        180deg,
+        #fff7ef 0%,
+        #f9e1cf 30%,
+        #f4b481 65%,
+        #e97832 100%
+    );
+}
