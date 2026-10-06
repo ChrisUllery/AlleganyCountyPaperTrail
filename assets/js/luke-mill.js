@@ -1,4 +1,4 @@
-const MANIFEST_URL =
+﻿const MANIFEST_URL =
     "../assets/documents/luke-mill/manifest.json";
 
 const WEB_BASE =
@@ -21,7 +21,7 @@ const GROUP_INFO = {
     },
 
     C: {
-        title: "Deed — West Virginia Property",
+        title: "Deed â€” West Virginia Property",
         date: ""
     },
 
@@ -56,7 +56,7 @@ const GROUP_INFO = {
     },
 
     J: {
-        title: "BOCC Agenda Packet — Signed Documents",
+        title: "BOCC Agenda Packet â€” Signed Documents",
         date: "July 10, 2025"
     }
 
@@ -233,11 +233,11 @@ function openModal(index) {
         WEB_BASE + item.web_filename;
 
     image.alt =
-        `${info?.title || "Document"} — ${getPageLabel(item)}`;
+        `${info?.title || "Document"} â€” ${getPageLabel(item)}`;
 
 
     title.textContent =
-        `${info?.title || "Document"} — ${getPageLabel(item)}`;
+        `${info?.title || "Document"} â€” ${getPageLabel(item)}`;
 
 
     link.href =
