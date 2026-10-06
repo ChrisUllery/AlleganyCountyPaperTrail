@@ -865,3 +865,53 @@ body {
         #e97832 100%
     );
 }
+
+/* LOCAL LUKE MILL CONTEXT TEST */
+.collection-context {
+    width: min(1180px, calc(100% - 40px));
+    margin: 0 auto;
+    padding: 55px 0 10px;
+}
+.collection-context-inner {
+    display: grid;
+    grid-template-columns: minmax(0, 2fr) minmax(260px, 1fr);
+    gap: 60px;
+    padding: 32px 0;
+    border-top: 2px solid rgba(34, 34, 34, 0.75);
+    border-bottom: 1px solid rgba(34, 34, 34, 0.35);
+}
+.collection-context h2 {
+    margin: 0 0 20px;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(2rem, 4vw, 3rem);
+}
+.collection-context-main p:not(.section-kicker),
+.collection-questions p:not(.section-kicker) {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.05rem;
+    line-height: 1.65;
+}
+.collection-context-main p:last-child {
+    margin-bottom: 0;
+}
+.collection-questions {
+    padding-left: 28px;
+    border-left: 4px solid #765537;
+}
+.collection-questions p:last-child {
+    margin: 0;
+    font-size: 1.18rem;
+    line-height: 1.55;
+}
+.collection-context + .document-archive {
+    padding-top: 45px;
+}
+@media (max-width: 800px) {
+    .collection-context-inner {
+        grid-template-columns: 1fr;
+        gap: 32px;
+    }
+    .collection-questions {
+        padding-left: 20px;
+    }
+}
