@@ -46,11 +46,12 @@ GROUP_NAMES = {
     "H": "port-river-west-agreement-2025-07-10",
     "I": "bocc-agenda-2025-07-10-secondary",
     "J": "bocc-agenda-packet-signed-documents-2025-07-10",
+    "K": "off-grid-energy-email-2025-07-17",
 }
 
 
 def get_group(filename: str) -> str:
-    match = re.match(r"^([A-J])", filename.strip(), re.IGNORECASE)
+    match = re.match(r"^([A-K])", filename.strip(), re.IGNORECASE)
 
     if not match:
         raise ValueError(f"Could not determine group for: {filename}")

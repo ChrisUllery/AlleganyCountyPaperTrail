@@ -58,6 +58,11 @@ const GROUP_INFO = {
     J: {
         title: "BOCC Agenda Packet: Signed Documents",
         date: "July 10, 2025"
+    },
+
+    K: {
+        title: "Off the Grid Energy Works Email: Proposed Data Center",
+        date: "July 17, 2025"
     }
 
 };
