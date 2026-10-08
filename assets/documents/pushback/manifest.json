@@ -883,5 +883,20 @@
     "original_bytes": 114194,
     "web_bytes": 6460,
     "thumbnail_bytes": 1280
+  },
+  {
+    "group": "H",
+    "group_name": "republican-alliance-correspondence",
+    "title": "Correspondence with the Allegany County Republican Alliance",
+    "date": "April 23, 2026",
+    "page": 1,
+    "original_filename": "H - Republican Alliance Correspondence.pdf",
+    "web_filename": "h-republican-alliance-correspondence-page-01.webp",
+    "thumbnail_filename": "h-republican-alliance-correspondence-page-01.webp",
+    "original_width": 1224,
+    "original_height": 1584,
+    "original_bytes": 42002,
+    "web_bytes": 111540,
+    "thumbnail_bytes": 15772
   }
 ]
