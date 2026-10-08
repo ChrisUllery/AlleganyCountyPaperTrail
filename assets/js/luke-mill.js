@@ -1,4 +1,4 @@
-﻿const MANIFEST_URL =
+const MANIFEST_URL =
     "../assets/documents/luke-mill/manifest.json";
 
 const WEB_BASE =
@@ -148,6 +148,8 @@ function buildGroups(manifest) {
             document.createElement("section");
 
         section.className = "document-group";
+
+        section.id = `exhibit-${group.toLowerCase()}`;
 
 
         const heading =

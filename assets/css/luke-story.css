@@ -1,0 +1,178 @@
+/* --------------------------------------------------
+   LUKE MILL LONGFORM STORY
+-------------------------------------------------- */
+
+.story-hero {
+    width: min(1040px, calc(100% - 40px));
+    margin: 0 auto;
+    padding: 72px 0 42px;
+}
+
+.story-hero h1 {
+    max-width: 930px;
+    margin: 0;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(3rem, 6.5vw, 5.5rem);
+    line-height: 0.98;
+    letter-spacing: -0.04em;
+}
+
+.story-deck {
+    max-width: 800px;
+    margin: 28px 0 0;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(1.2rem, 2.3vw, 1.55rem);
+    line-height: 1.55;
+    color: #3f342b;
+}
+
+.story-tools {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 18px 28px;
+    margin-top: 30px;
+}
+
+.story-tools .document-count {
+    margin: 0;
+}
+
+.story-source-jump {
+    color: #5d3822;
+    font-size: 0.86rem;
+    font-weight: 700;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+}
+
+.story-article {
+    width: min(1040px, calc(100% - 40px));
+    margin: 0 auto 80px;
+    padding: 68px 76px 74px;
+    background: rgba(255, 250, 245, 0.93);
+    border: 1px solid rgba(85, 55, 35, 0.22);
+    box-shadow: 0 18px 55px rgba(67, 37, 17, 0.10);
+}
+
+.story-copy {
+    width: min(760px, 100%);
+    margin: 0 auto;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.12rem;
+    line-height: 1.82;
+}
+
+.story-copy p {
+    margin: 0 0 1.55em;
+}
+
+.story-copy h2 {
+    margin: 58px 0 24px;
+    padding-top: 28px;
+    border-top: 2px solid rgba(34, 34, 34, 0.72);
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(2rem, 4vw, 3rem);
+    line-height: 1.12;
+    letter-spacing: -0.025em;
+}
+
+.source-link {
+    color: #653b20;
+    font-weight: 700;
+    text-decoration-line: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 3px;
+}
+
+.source-link:hover {
+    color: #2f1b10;
+}
+
+.exhibit-tag {
+    display: inline-block;
+    margin-left: 6px;
+    padding: 2px 6px;
+    vertical-align: 0.08em;
+    background: #765537;
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.62rem;
+    line-height: 1.35;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.story-figure {
+    width: calc(100% + 72px);
+    margin: 52px -36px 58px;
+}
+
+.story-figure img {
+    width: 100%;
+    height: auto;
+    border: 1px solid rgba(34, 34, 34, 0.18);
+    background: #eeeeeb;
+}
+
+.story-figure-lte {
+    width: min(880px, calc(100% + 40px));
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.story-image-link {
+    display: block;
+}
+
+.story-figure figcaption {
+    width: min(760px, calc(100% - 24px));
+    margin: 12px auto 0;
+    color: #62574d;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.82rem;
+    line-height: 1.5;
+}
+
+.document-group {
+    scroll-margin-top: 84px;
+}
+
+.document-archive {
+    border-top: 1px solid rgba(34, 34, 34, 0.20);
+}
+
+@media (max-width: 800px) {
+    .story-hero {
+        padding: 52px 0 30px;
+    }
+
+    .story-article {
+        width: min(100% - 24px, 1040px);
+        margin-bottom: 55px;
+        padding: 44px 24px 50px;
+    }
+
+    .story-copy {
+        font-size: 1.04rem;
+        line-height: 1.74;
+    }
+
+    .story-copy h2 {
+        margin-top: 46px;
+        padding-top: 22px;
+    }
+
+    .story-figure,
+    .story-figure-lte {
+        width: 100%;
+        margin: 38px auto 44px;
+    }
+
+    .story-tools {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 10px;
+    }
+}
