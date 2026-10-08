@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>In the News | Allegany County Paper Trail</title>
+    <meta name="description" content="News coverage of Kit Pepper Lescallette's work to examine Allegany County government and public records.">
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <link rel="stylesheet" href="../assets/css/luke-story.css">
+    <link rel="stylesheet" href="../assets/css/collection-pages.css">
+</head>
+<body data-collection="news">
+    <section class="site-banner">
+        <img src="../assets/images/acpt-banner.webp" alt="Allegany County Paper Trail banner for Kit Pepper Lescallette">
+    </section>
+    <nav class="banner-nav" aria-label="Main navigation">
+        <a href="../index.html">Home</a>
+        <a href="../index.html#documents">Documents</a>
+        <a href="../index.html#about">About</a>
+    </nav>
+    <main>
+        <header class="story-hero collection-hero">
+            <p class="eyebrow">Allegany County Paper Trail</p>
+            <h1>In the News</h1>
+            <div class="story-tools">
+                <p class="document-count" id="document-count" role="status"></p>
+                <a class="story-source-jump" href="#documents">Browse the articles</a>
+            </div>
+        </header>
+        <article class="story-article collection-intro">
+            <div class="story-copy">
+                <p>The Cumberland Times-News has followed Kit Pepper Lescallette’s work as a concerned citizen. Her “five minutes a meeting” have shown the county’s lack of transparency, asked questions that need answers and identified important changes that need to be made.</p>
+            </div>
+        </article>
+        <section class="document-archive collection-archive" id="documents" aria-label="News articles">
+            <div class="archive-heading">
+                <p class="section-kicker">News archive</p>
+                <h2>Articles and coverage</h2>
+                <p>Select a document page to read the article in a larger view.</p>
+            </div>
+            <p class="archive-empty" id="archive-empty" hidden></p>
+            <div id="document-groups"></div>
+        </section>
+    </main>
+    <div class="document-modal" id="document-modal" aria-hidden="true" role="dialog" aria-modal="true" aria-label="News article image viewer">
+        <button class="modal-close" id="modal-close" type="button" aria-label="Close image">&times;</button>
+        <button class="modal-nav modal-prev" id="modal-prev" type="button" aria-label="Previous page">&lsaquo;</button>
+        <div class="modal-content">
+            <img id="modal-image" src="" alt="">
+            <div class="modal-caption">
+                <span id="modal-title"></span>
+                <a id="modal-full-link" href="#" target="_blank" rel="noopener">Open full image &#8599;</a>
+            </div>
+        </div>
+        <button class="modal-nav modal-next" id="modal-next" type="button" aria-label="Next page">&rsaquo;</button>
+    </div>
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <p>&copy; 2026 Allegany County Paper Trail</p>
+            <p>Allegany County, Maryland</p>
+        </div>
+    </footer>
+    <script src="../assets/js/collection-gallery.js" defer></script>
+    <!-- Cloudflare Web Analytics -->
+    <script type="module" src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token":"048312696fd843c7a0aa2223e8cd7665"}'></script>
+    <!-- End Cloudflare Web Analytics -->
+</body>
+</html>
