@@ -113,3 +113,12 @@
 #documents .news-feature {
     background: linear-gradient(135deg, #194c61, #397e86);
 }
+.site-footer .campaign-disclaimer {
+    margin: 0;
+    padding: 12px 16px 18px;
+    border-top: 1px solid rgba(128, 128, 128, 0.2);
+    text-align: center;
+    font-size: 0.78rem;
+    line-height: 1.5;
+    opacity: 0.8;
+}
