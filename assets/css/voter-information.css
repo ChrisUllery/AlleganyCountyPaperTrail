@@ -1,0 +1,241 @@
+.voter-page {
+    padding-bottom: 48px;
+}
+
+.voter-panel {
+    width: min(1100px, 92%);
+    margin: 36px auto;
+}
+
+.voter-panel h2 {
+    margin-bottom: 24px;
+}
+
+.voter-resource-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 16px;
+}
+
+.voter-resource {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+    padding: 24px;
+    background: #fff;
+    border: 1px solid #d9e2e3;
+    border-radius: 12px;
+    font-weight: 650;
+    text-decoration: none;
+    color: #126477;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.voter-resource:hover,
+.voter-resource:focus-visible {
+    border-color: #126477;
+    text-decoration: underline;
+}
+
+.voter-deadlines {
+    display: grid;
+    gap: 16px;
+}
+
+.voter-deadline {
+    padding: 24px;
+    background: #fff;
+    border: 1px solid #d9e2e3;
+    border-radius: 12px;
+}
+
+.voter-date {
+    color: #a8502e;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.voter-deadline h3 {
+    margin: 0 0 12px;
+}
+
+.voter-deadline p:last-child {
+    margin-bottom: 0;
+}
+
+.voter-source {
+    margin-top: 24px;
+    font-size: 0.85rem;
+}
+
+/* ACPT voter timeline */
+
+/* Keep the page heading aligned with the timeline */
+
+.voter-page > .story-hero {
+    width: min(1100px, 92%);
+    max-width: none;
+    margin: 0 auto;
+    padding: 52px 0 12px;
+    box-sizing: border-box;
+}
+
+.voter-page > .story-hero h1 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(2.5rem, 5vw, 4.5rem);
+    line-height: 1.1;
+    margin: 12px 0 20px;
+}
+
+.voter-page > .story-hero p:not(.eyebrow) {
+    max-width: 720px;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+/* Timeline */
+
+.voter-timeline-section h2 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(1.8rem, 3vw, 2.5rem);
+}
+
+.voter-timeline {
+    position: relative;
+    margin-top: 36px;
+}
+
+.voter-timeline::before {
+    content: "";
+    position: absolute;
+    top: 20px;
+    bottom: 40px;
+    left: calc(34% + 36px);
+    width: 3px;
+    background: #70533e;
+}
+
+.voter-timeline-item {
+    display: grid;
+    grid-template-columns: 34% 36px minmax(0, 1fr);
+    column-gap: 18px;
+    align-items: start;
+    margin-bottom: 24px;
+    position: relative;
+}
+
+.voter-timeline-date {
+    padding-top: 15px;
+    text-align: right;
+    font-weight: 700;
+    font-size: 0.95rem;
+    line-height: 1.5;
+    color: #5e3628;
+}
+
+.voter-timeline-dot {
+    position: relative;
+    z-index: 1;
+    width: 20px;
+    height: 20px;
+    margin-top: 16px;
+    justify-self: center;
+    border: 5px solid #a8502e;
+    border-radius: 50%;
+    background: #ffffff;
+    box-sizing: border-box;
+}
+
+.voter-timeline-card {
+    min-width: 0;
+    padding: 24px;
+    background: #fffaf6;
+    border: 1px solid rgba(90, 57, 39, 0.15);
+    border-radius: 8px;
+}
+
+.voter-timeline-card h3 {
+    margin: 0 0 12px;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.4rem;
+    line-height: 1.25;
+}
+
+.voter-timeline-card p {
+    margin: 0;
+    line-height: 1.65;
+}
+
+.voter-timeline-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 20px;
+    margin-top: 18px;
+}
+
+.voter-timeline-links a,
+.voter-local-office a {
+    color: #713719;
+    font-weight: 700;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+.voter-local-office,
+.voter-source {
+    line-height: 1.6;
+}
+
+/* Mobile layout */
+
+@media (max-width: 700px) {
+    .voter-timeline::before {
+        left: 17px;
+    }
+
+    .voter-timeline-item {
+        grid-template-columns: 36px minmax(0, 1fr);
+        gap: 8px 14px;
+    }
+
+    .voter-timeline-dot {
+        grid-column: 1;
+        grid-row: 1 / span 2;
+    }
+
+    .voter-timeline-date {
+        grid-column: 2;
+        grid-row: 1;
+        text-align: left;
+        padding-top: 12px;
+    }
+
+    .voter-timeline-card {
+        grid-column: 2;
+        grid-row: 2;
+        padding: 18px;
+    }
+}
+/* Larger timeline dates */
+.voter-timeline-date {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(1.15rem, 1.7vw, 1.4rem);
+    font-weight: 700;
+    line-height: 1.35;
+    padding-top: 10px;
+}
+/* Mail-in ballot return information */
+
+.voter-mail-in-intro {
+    max-width: 75ch;
+    margin: 12px 0 32px;
+    font-size: 1rem;
+    line-height: 1.7;
+}
+
+.voter-mail-in-intro a {
+    color: #713719;
+    font-weight: 700;
+    text-decoration: underline;
+}

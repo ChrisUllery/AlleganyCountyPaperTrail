@@ -1,0 +1,151 @@
+{
+  "source": "Maryland State Board of Elections",
+  "source_url": "https://elections.maryland.gov/elections/2026/vote2026/",
+  "retrieved_at_utc": "2026-10-09T18:05:53.148088+00:00",
+  "election": "2026 Maryland General Election",
+  "events": [
+    {
+      "title": "Deadline to Register to Vote Online or by Mail",
+      "date_display": "Tuesday | October 13, 2026",
+      "start_date": "2026-10-13",
+      "end_date": "2026-10-13",
+      "description": "This is the last day you can register to vote online or by mail. Mail-in registrations must be postmarked on or before October 13, 2026.",
+      "links": [
+        {
+          "label": "Register to vote online",
+          "url": "https://voterservices.elections.maryland.gov/OnlineVoterRegistration/InstructionsStep1"
+        },
+        {
+          "label": "Register to vote by mail",
+          "url": "https://elections.maryland.gov/voter_registration/application.html"
+        }
+      ]
+    },
+    {
+      "title": "Early Voting",
+      "date_display": "Thursday | October 22, 2026 - Thursday | October 29, 2026",
+      "start_date": "2026-10-22",
+      "end_date": "2026-10-29",
+      "description": "The week ahead of Election Day, you can vote at an early voting center. Polls are open from 7 am to 8 pm. As long as you're in line by 8 pm, you'll be able to vote.",
+      "links": [
+        {
+          "label": "Find early voting location",
+          "url": "https://voterservices.elections.maryland.gov/PollingPlaceSearch"
+        }
+      ]
+    },
+    {
+      "title": "Deadline To Request a Mail-in Ballot Delivered by Mail or Fax",
+      "date_display": "By Tuesday | October 27, 2026",
+      "start_date": "2026-10-27",
+      "end_date": "2026-10-27",
+      "description": "If you want to receive your mail-in ballot via mail or fax, your request must be received (not just mailed) or submitted online by October 27, 2026.",
+      "links": [
+        {
+          "label": "Request mail-in ballot",
+          "url": "https://elections.maryland.gov/voting/absentee.html#:~:text=How%20do%20I%20request%20a%20mail%2Din%20ballot%3F"
+        }
+      ]
+    },
+    {
+      "title": "Deadline To Request a Mail-in Ballot Online",
+      "date_display": "Friday | October 30, 2026",
+      "start_date": "2026-10-30",
+      "end_date": "2026-10-30",
+      "description": "If you want to receive your mail-in ballot via email, submit your request online by Friday, October 30, 2026.",
+      "links": [
+        {
+          "label": "Request a mail-in ballot online",
+          "url": "https://voterservices.elections.maryland.gov/onlinemailinrequest/InstructionsStep1"
+        }
+      ]
+    },
+    {
+      "title": "Election Day",
+      "date_display": "Tuesday | November 3, 2026",
+      "start_date": "2026-11-03",
+      "end_date": "2026-11-03",
+      "description": "This is the final day you can vote. Polls are open from 7 am to 8 pm, and in-person registration is available.",
+      "links": [
+        {
+          "label": "Find your polling place",
+          "url": "https://voterservices.elections.maryland.gov/PollingPlaceSearch"
+        }
+      ]
+    },
+    {
+      "title": "Deadline to Return a Mail-in Ballot",
+      "date_display": "By or Before Tuesday | November 3, 2026",
+      "start_date": "2026-11-03",
+      "end_date": "2026-11-03",
+      "description": "You have two ways to return your mail-in ballot: By mail: Make sure your mail-in ballot is postmarked by or before November 3, 2026. We recommend you return it as soon as you've filled it out. By hand: You can also hand-deliver your ballot to an approved dropbox or local board of elections by 8 pm on Election Day.",
+      "links": [
+        {
+          "label": "Find Official Dropboxes",
+          "url": "https://elections.maryland.gov/elections/2026/index.html#mail_voting:~:text=Submitting%20Your%20Mail%2DIn%20Ballot"
+        },
+        {
+          "label": "Learn About Postmarking",
+          "url": "https://faq.usps.com/s/article/Requirements-and-Standards-for-Sending-Domestic-Mail#postmarks"
+        }
+      ]
+    }
+  ],
+  "resources": [
+    {
+      "id": "check_registration",
+      "title": "Check Your Voter Registration",
+      "description": "Look up your voter registration information using Maryland's official voter services website.",
+      "url": "https://voterservices.elections.maryland.gov/VoterSearch",
+      "source": "Maryland State Board of Elections"
+    },
+    {
+      "id": "sample_ballots",
+      "title": "View Sample Ballots",
+      "url": "https://elections.maryland.gov/elections/2026/index.html#ballot_cert",
+      "source": "Maryland State Board of Elections"
+    },
+    {
+      "id": "voter_checklist",
+      "title": "Voter Checklist",
+      "url": "https://elections.maryland.gov/elections/2026/vote2026/assets/pdf/2026_My-Election-Checklist_GENERAL.pdf",
+      "source": "Maryland State Board of Elections"
+    },
+    {
+      "id": "voting_glossary",
+      "title": "Voting 101",
+      "url": "https://elections.maryland.gov/elections/2026/vote2026/assets/pdf/2026_My-Election-Glossary.pdf",
+      "source": "Maryland State Board of Elections"
+    },
+    {
+      "id": "registration_faq",
+      "title": "Voter registration FAQ",
+      "url": "https://elections.maryland.gov/voter_registration/index.html",
+      "source": "Maryland State Board of Elections"
+    },
+    {
+      "id": "accessibility",
+      "title": "Access for voters with disabilities FAQ",
+      "url": "https://elections.maryland.gov/voting/accessibility.html",
+      "source": "Maryland State Board of Elections"
+    },
+    {
+      "id": "mail_voting_faq",
+      "title": "Mail-In voting FAQ",
+      "url": "https://elections.maryland.gov/voting/absentee.html",
+      "source": "Maryland State Board of Elections"
+    },
+    {
+      "id": "voting_faq",
+      "title": "Voting FAQ",
+      "url": "https://elections.maryland.gov/voting/index.html",
+      "source": "Maryland State Board of Elections"
+    },
+    {
+      "id": "election_day_faq",
+      "title": "Election day FAQ",
+      "url": "https://elections.maryland.gov/voting/election_day_questions.html",
+      "source": "Maryland State Board of Elections"
+    }
+  ]
+}
