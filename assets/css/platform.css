@@ -892,3 +892,37 @@ Set-Content $htmlPath -Value $html -Encoding UTF8
 .proposal-action-box .proposal-action-text + .proposal-action-text {
     font-weight: 400;
 }
+
+
+/* Board visibility note */
+.proposal-content-panel .proposal-visibility-note {
+    margin: 26px 0 0;
+    max-width: 850px;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.08rem;
+    line-height: 1.75;
+}
+
+/* Board recommendations action spacing */
+.proposal-narrative-section[aria-labelledby="independence-heading"] .proposal-action-box + p {
+    margin-top: 24px;
+}
+
+
+/* Board participation mobile typography */
+
+/* Match the paragraph after the quotation list to the introduction */
+.proposal-content-panel .proposal-section[aria-labelledby="confidence-heading"] > p:not(.section-kicker) {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.15rem;
+    font-weight: 400;
+    line-height: 1.68;
+}
+
+/* Reduce the central idea banner text on phones */
+@media (max-width: 480px) {
+    .boards-platform-page .proposal-thesis > p:not(.section-kicker) {
+        font-size: 1.35rem;
+        line-height: 1.32;
+    }
+}
