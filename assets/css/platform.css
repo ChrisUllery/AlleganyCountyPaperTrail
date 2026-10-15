@@ -1,0 +1,821 @@
+﻿/* Platform landing page */
+
+.platform-section {
+    padding-top: 35px;
+}
+
+.platform-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 28px;
+}
+
+.platform-card {
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    background: rgba(255, 250, 245, 0.94);
+    border: 1px solid rgba(85, 55, 35, 0.25);
+}
+
+.platform-card h3 {
+    margin: 0 0 20px;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(1.8rem, 3vw, 2.5rem);
+    line-height: 1.15;
+}
+
+.platform-card p:not(.card-label) {
+    margin: 0 0 18px;
+    color: #4e463f;
+    line-height: 1.7;
+}
+
+.platform-card p:last-child {
+    margin-bottom: 0;
+}
+
+@media (max-width: 800px) {
+    .platform-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .platform-card {
+        padding: 28px;
+    }
+}
+
+/* Platform detail and linked cards */
+
+.platform-grid > a.platform-card {
+    color: inherit;
+    text-decoration: none;
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.platform-grid > a.platform-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(67, 37, 17, 0.13);
+}
+
+.platform-grid > a.platform-card:focus-visible {
+    outline: 3px solid #194c61;
+    outline-offset: 4px;
+}
+
+.platform-detail .story-copy h2:first-child {
+    margin-top: 0;
+    padding-top: 0;
+    border-top: 0;
+}
+
+.platform-detail .story-copy ul {
+    margin: 0 0 1.55em;
+    padding-left: 1.5em;
+}
+
+.platform-detail .story-copy li {
+    margin-bottom: 0.35em;
+}
+
+.platform-detail .platform-return {
+    margin-top: 55px;
+    padding-top: 26px;
+    border-top: 1px solid rgba(34, 34, 34, 0.3);
+}
+
+/* Innovation Incubator proposal page */
+
+.proposal-page {
+    padding-bottom: 72px;
+}
+
+.proposal-hero,
+.proposal-section,
+.proposal-thesis,
+.proposal-footer-nav {
+    width: min(1120px, calc(100% - 40px));
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.proposal-hero {
+    padding: 64px 0 48px;
+}
+
+.proposal-hero h1 {
+    max-width: 950px;
+    margin: 0 0 28px;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(3rem, 6.4vw, 5.3rem);
+    line-height: 1.02;
+    letter-spacing: -0.035em;
+}
+
+.proposal-lead {
+    max-width: 850px;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(1.1rem, 1.7vw, 1.3rem);
+    line-height: 1.65;
+}
+
+.proposal-lead p {
+    margin: 0 0 16px;
+}
+
+.proposal-thesis {
+    padding: 35px 42px;
+    background: #103b46;
+    color: #fffaf5;
+    border-left: 7px solid #ed8c45;
+}
+
+.proposal-thesis .section-kicker {
+    color: #ffc491;
+}
+
+.proposal-thesis > p:last-child {
+    max-width: 900px;
+    margin: 0;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(1.65rem, 3.4vw, 2.7rem);
+    font-weight: 700;
+    line-height: 1.25;
+}
+
+.proposal-section {
+    padding-top: 70px;
+}
+
+.proposal-section-intro {
+    max-width: 840px;
+    margin-bottom: 30px;
+}
+
+.proposal-section-intro h2 {
+    margin: 0 0 20px;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(2rem, 4.3vw, 3.3rem);
+    line-height: 1.12;
+}
+
+.proposal-section-intro > p:last-child {
+    margin: 0;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.15rem;
+    line-height: 1.68;
+}
+
+.proposal-steps,
+.proposal-disciplines {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 18px;
+}
+
+.proposal-step,
+.proposal-discipline-group {
+    padding: 30px;
+    background: rgba(255, 250, 245, 0.95);
+    border: 1px solid rgba(85, 55, 35, 0.26);
+}
+
+.proposal-step-label {
+    display: block;
+    margin-bottom: 24px;
+    color: #80502e;
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+.proposal-step h3,
+.proposal-discipline-group h3,
+.proposal-goal h3 {
+    margin: 0 0 16px;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.55rem;
+    line-height: 1.23;
+}
+
+.proposal-step p,
+.proposal-goal p {
+    margin: 0;
+    font-size: 1rem;
+    line-height: 1.7;
+}
+
+.proposal-disciplines-section {
+    padding: 64px 0 0;
+    border-top: 1px solid rgba(51, 34, 20, 0.28);
+    margin-top: 72px;
+}
+
+.proposal-discipline-group {
+    background: rgba(255, 250, 245, 0.85);
+}
+
+.proposal-discipline-group ul {
+    margin: 0;
+    padding-left: 19px;
+    line-height: 1.8;
+}
+
+.proposal-discipline-group li {
+    padding-bottom: 7px;
+}
+
+.proposal-goals-section {
+    margin-top: 72px;
+    padding-top: 64px;
+    border-top: 1px solid rgba(51, 34, 20, 0.28);
+}
+
+.proposal-goals {
+    background: rgba(255, 250, 245, 0.91);
+    padding: 8px 38px;
+}
+
+.proposal-goal {
+    display: grid;
+    grid-template-columns: minmax(180px, 0.8fr) minmax(0, 1.5fr);
+    gap: 36px;
+    padding: 27px 0;
+}
+
+.proposal-goal + .proposal-goal {
+    border-top: 1px solid rgba(85, 55, 35, 0.24);
+}
+
+.proposal-goal h3 {
+    margin: 0;
+}
+
+.proposal-footer-nav {
+    padding-top: 44px;
+}
+
+.proposal-footer-nav a {
+    color: #4d311f;
+    font-weight: 700;
+    text-underline-offset: 4px;
+}
+
+@media (max-width: 800px) {
+    .proposal-hero {
+        padding: 42px 0 32px;
+    }
+
+    .proposal-section {
+        padding-top: 48px;
+    }
+
+    .proposal-thesis {
+        padding: 30px 26px;
+    }
+
+    .proposal-steps,
+    .proposal-disciplines {
+        grid-template-columns: 1fr;
+        gap: 14px;
+    }
+
+    .proposal-step,
+    .proposal-discipline-group {
+        padding: 25px;
+    }
+
+    .proposal-disciplines-section,
+    .proposal-goals-section {
+        margin-top: 50px;
+        padding-top: 45px;
+    }
+
+    .proposal-goals {
+        padding: 0 24px;
+    }
+
+    .proposal-goal {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+}
+
+/* Narrative platform layout */
+
+.platform-narrative,
+.platform-crossdisciplinary,
+.platform-outcomes {
+    width: min(1120px, calc(100% - 40px));
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.platform-narrative {
+    padding-top: 75px;
+}
+
+.platform-narrative-intro,
+.platform-outcomes-intro {
+    max-width: 870px;
+    margin-bottom: 42px;
+}
+
+.platform-narrative h2,
+.platform-crossdisciplinary h2,
+.platform-outcomes h2 {
+    margin: 0 0 24px;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(2.2rem, 4.5vw, 3.6rem);
+    line-height: 1.12;
+    letter-spacing: -0.025em;
+}
+
+.platform-narrative-intro p:not(.section-kicker),
+.platform-outcomes-intro p:not(.section-kicker) {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.17rem;
+    line-height: 1.75;
+}
+
+.platform-method {
+    display: grid;
+    grid-template-columns: minmax(180px, 0.7fr) minmax(0, 1.4fr);
+    gap: 55px;
+    padding: 34px 0;
+    border-top: 1px solid rgba(51, 34, 20, 0.33);
+}
+
+.platform-method-heading h3,
+.platform-outcome h3 {
+    margin: 0;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(1.55rem, 2.5vw, 2rem);
+    line-height: 1.2;
+}
+
+.platform-method-copy {
+    max-width: 730px;
+}
+
+.platform-method-copy p,
+.platform-crossdisciplinary-copy p,
+.platform-outcome p {
+    margin: 0 0 19px;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.12rem;
+    line-height: 1.75;
+}
+
+.platform-method-copy p:last-child,
+.platform-crossdisciplinary-copy p:last-child,
+.platform-outcome p:last-child {
+    margin-bottom: 0;
+}
+
+.platform-crossdisciplinary {
+    display: grid;
+    grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.25fr);
+    gap: 50px;
+    margin-top: 75px;
+    padding: 48px;
+    border-left: 6px solid #103b46;
+    background: rgba(255, 250, 245, 0.92);
+}
+
+.platform-crossdisciplinary-heading h2 {
+    font-size: clamp(2rem, 3.4vw, 2.8rem);
+}
+
+.platform-crossdisciplinary-copy {
+    max-width: 690px;
+}
+
+.platform-outcomes {
+    margin-top: 80px;
+    padding-top: 55px;
+    border-top: 1px solid rgba(51, 34, 20, 0.33);
+}
+
+.platform-outcomes-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    column-gap: 55px;
+    row-gap: 45px;
+}
+
+.platform-outcome {
+    padding-top: 22px;
+    border-top: 3px solid #103b46;
+}
+
+.platform-outcome h3 {
+    margin-bottom: 20px;
+}
+
+.platform-outcome-wide {
+    grid-column: 1 / -1;
+    max-width: 870px;
+}
+
+@media (max-width: 800px) {
+    .platform-narrative {
+        padding-top: 48px;
+    }
+
+    .platform-method {
+        grid-template-columns: 1fr;
+        gap: 14px;
+        padding: 28px 0;
+    }
+
+    .platform-crossdisciplinary {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding: 30px 24px;
+        margin-top: 50px;
+    }
+
+    .platform-outcomes {
+        margin-top: 50px;
+        padding-top: 40px;
+    }
+
+    .platform-outcomes-grid {
+        grid-template-columns: 1fr;
+        row-gap: 28px;
+    }
+
+    .platform-outcome-wide {
+        grid-column: auto;
+    }
+
+    .platform-method-copy p,
+    .platform-crossdisciplinary-copy p,
+    .platform-outcome p {
+        font-size: 1.05rem;
+    }
+}
+<ul class="proposal-outline">
+    <li>
+        <h3>Listen to local needs</h3>
+        <p>Students would work directly with residents, businesses, nonprofit organizations and public agencies to identify gaps in services, workforce needs, quality-of-life concerns and possibilities for new products or businesses.</p>
+    </li>
+    <li>
+        <h3>Study the opportunities</h3>
+        <p>Research could include surveys of residents, interviews with business owners and managers about expansion goals, reviews of financial strengths and weaknesses, and studies of comparable communities.</p>
+    </li>
+    <li>
+        <h3>Develop and present ideas</h3>
+        <p>An intensive entrepreneurship and innovation course would combine community research, economic analysis, interdisciplinary collaboration, business planning and public presentation.</p>
+    </li>
+</ul>
+    '@
+
+$stamp = Get-Date -Format "yyyyMMdd-HHmmss"
+Copy-Item $htmlPath "$htmlPath.bak-$stamp"
+Copy-Item $cssPath "$cssPath.bak-$stamp"
+
+$html = $html.Substring(0, $start) + $newContent + "`r`n    " + $html.Substring($end)
+Set-Content $htmlPath -Value $html -Encoding UTF8
+
+@'
+
+/* Program concept bullet outline */
+
+.proposal-section .proposal-outline {
+    max-width: 850px;
+    margin: 32px 0 0;
+    padding-left: 36px;
+    list-style-type: disc;
+}
+
+.proposal-section .proposal-outline li {
+    padding-left: 10px;
+    margin-bottom: 32px;
+}
+
+.proposal-section .proposal-outline li::marker {
+    color: #103b46;
+    font-size: 1.3em;
+}
+
+.proposal-section .proposal-outline h3 {
+    margin: 0 0 10px;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(1.35rem, 2.5vw, 1.7rem);
+    line-height: 1.3;
+}
+
+.proposal-section .proposal-outline p {
+    margin: 0;
+    padding-left: 12px;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.08rem;
+    line-height: 1.75;
+}
+/* Platform reading panel */
+
+.proposal-content-panel {
+    width: min(1120px, calc(100% - 40px));
+    margin: 28px auto 0;
+    padding: 42px clamp(24px, 4vw, 56px) 48px;
+    background: #f3ebe2;
+    border: 1px solid rgba(85, 55, 35, 0.18);
+    box-shadow: 0 12px 35px rgba(67, 37, 17, 0.08);
+}
+
+.proposal-content-panel > .proposal-section,
+.proposal-content-panel > .proposal-footer-nav {
+    width: 100%;
+}
+
+.proposal-content-panel > .proposal-section:first-child {
+    padding-top: 0;
+}
+
+@media (max-width: 800px) {
+    .proposal-content-panel {
+        width: calc(100% - 24px);
+        margin-top: 20px;
+        padding: 28px 22px 32px;
+    }
+}
+
+/* Unified program list background */
+
+.proposal-content-panel .proposal-outline {
+    max-width: 100%;
+    margin: 30px 0 0;
+    padding: 30px 38px 30px 62px;
+    background: #fffaf5;
+    border: 1px solid rgba(85, 55, 35, 0.18);
+}
+
+.proposal-content-panel .proposal-outline li {
+    margin-bottom: 26px;
+}
+
+.proposal-content-panel .proposal-outline li:last-child {
+    margin-bottom: 0;
+}
+
+@media (max-width: 800px) {
+    .proposal-content-panel .proposal-outline {
+        padding: 25px 22px 25px 42px;
+    }
+}
+
+/* Narrative sections for platform proposals */
+
+.proposal-content-panel .proposal-narrative-section {
+    margin-top: 65px;
+    padding-top: 48px;
+    border-top: 1px solid rgba(51, 34, 20, 0.3);
+}
+
+.proposal-narrative-section h2 {
+    margin: 0 0 24px;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(2rem, 4vw, 3rem);
+    line-height: 1.12;
+}
+
+.proposal-narrative-section > p:not(.section-kicker) {
+    max-width: 850px;
+    margin: 0 0 22px;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.08rem;
+    line-height: 1.75;
+}
+
+@media (max-width: 800px) {
+    .proposal-content-panel .proposal-narrative-section {
+        margin-top: 45px;
+        padding-top: 35px;
+    }
+}
+
+/* Closing quote banner */
+
+.proposal-quote-banner {
+    margin-top: 65px;
+    padding: 34px clamp(24px, 4vw, 42px);
+    background: #103b46;
+    color: #fffaf5;
+    border-left: 5px solid #ed8c45;
+}
+
+.proposal-quote-banner p {
+    max-width: 900px;
+    margin: 0 0 18px;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(1.3rem, 2.1vw, 1.75rem);
+    line-height: 1.5;
+}
+
+.proposal-quote-banner p:last-child {
+    margin-bottom: 0;
+}
+
+.proposal-quote-banner .proposal-quote-attribution {
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+    text-transform: none;
+}
+
+@media (max-width: 800px) {
+    .proposal-quote-banner {
+        margin-top: 45px;
+        padding: 26px 22px;
+    }
+
+    .proposal-quote-banner p {
+        font-size: 1.15rem;
+        line-height: 1.55;
+    }
+
+    .proposal-quote-banner .proposal-quote-attribution {
+        font-size: 0.98rem;
+    }
+}
+
+/* Inline closing quote attribution */
+
+.proposal-quote-banner .proposal-quote-text {
+    font-style: italic;
+}
+
+.proposal-quote-banner .proposal-quote-first {
+    display: block;
+    margin-bottom: 18px;
+}
+
+.proposal-quote-banner .proposal-quote-second {
+    display: block;
+}
+
+.proposal-quote-banner .proposal-quote-text .proposal-quote-attribution {
+    display: inline;
+    margin-left: 0.3em;
+    font-style: normal;
+    font-size: 1.06em;
+    font-weight: 800;
+    white-space: nowrap;
+}
+
+/* Attribution size refinement */
+
+.proposal-quote-banner .proposal-quote-text .proposal-quote-attribution {
+    font-size: 0.9em;
+}
+
+/* Supporting documents for platform positions */
+
+.proposal-supporting-documents {
+    margin-top: 55px;
+    padding-top: 45px;
+    border-top: 1px solid rgba(51, 34, 20, 0.3);
+}
+
+.proposal-supporting-documents h2 {
+    margin: 0 0 18px;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(2rem, 4vw, 3rem);
+    line-height: 1.12;
+}
+
+.proposal-supporting-documents > p:not(.section-kicker) {
+    max-width: 760px;
+    margin-bottom: 28px;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.08rem;
+    line-height: 1.65;
+}
+
+.proposal-source-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 22px;
+}
+
+.proposal-source-card {
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    background: #fffaf5;
+    border: 1px solid rgba(85, 55, 35, 0.25);
+    color: #1d1d1d;
+    text-decoration: none;
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.proposal-source-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 24px rgba(67, 37, 17, 0.13);
+}
+
+.proposal-source-card:focus-visible {
+    outline: 3px solid #103b46;
+    outline-offset: 3px;
+}
+
+.proposal-source-preview {
+    height: 290px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px;
+    background: #eae0d4;
+    overflow: hidden;
+}
+
+.proposal-source-preview img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.proposal-source-card strong {
+    margin-top: 14px;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.25rem;
+}
+
+.proposal-source-card span {
+    margin-top: 4px;
+    color: #653b20;
+    font-size: 0.85rem;
+    font-weight: 700;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+@media (max-width: 640px) {
+    .proposal-source-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .proposal-source-preview {
+        height: 260px;
+    }
+}
+
+/* Platform landing page refinements */
+
+.platform-landing .home-intro-inner {
+    width: min(1180px, 100%);
+}
+
+.platform-landing .platform-landing-intro {
+    padding-bottom: 20px;
+}
+
+.platform-landing .platform-section {
+    padding-top: 12px;
+}
+
+.platform-landing .platform-card {
+    color: #1d1d1d;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.platform-landing .platform-card h2 {
+    margin: 0 0 20px;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(1.8rem, 3vw, 2.5rem);
+    line-height: 1.15;
+}
+
+.platform-landing .platform-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(67, 37, 17, 0.13);
+}
+
+.platform-landing .platform-card:focus-visible {
+    outline: 3px solid #103b46;
+    outline-offset: 4px;
+}
+
+.platform-card-action {
+    display: inline-block;
+    margin-top: auto;
+    padding-top: 18px;
+    color: #653b20;
+    font-weight: 700;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+}
+
+@media (max-width: 700px) {
+    .platform-landing .platform-landing-intro {
+        padding-bottom: 14px;
+    }
+
+    .platform-landing .platform-section {
+        padding-top: 10px;
+    }
+}
