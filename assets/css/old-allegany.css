@@ -1,0 +1,69 @@
+/* Old Allegany High School platform page */
+
+/* Narrative paragraphs appearing after cards and lists */
+.old-allegany-platform-page .proposal-content-panel > .proposal-section > p:not(.section-kicker) {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.15rem;
+    font-weight: 400;
+    line-height: 1.68;
+}
+
+/* Space following informational cards and lists */
+.old-allegany-platform-page .proposal-section > .proposal-outline + p,
+.old-allegany-platform-page .proposal-section > .proposal-disciplines + p {
+    margin-top: 24px;
+}
+
+/* Separate the concluding narrative from the action box */
+.old-allegany-platform-page .proposal-narrative-section > .proposal-action-box + p {
+    margin-top: 24px;
+}
+
+
+/* Old Allegany layout refinements */
+
+/* Breathing room around the opening figures */
+.old-allegany-platform-page .proposal-lead .proposal-goals {
+    margin: 24px 0 26px;
+}
+
+.old-allegany-platform-page .proposal-lead .proposal-goal h3 {
+    font-size: 1.35rem;
+}
+
+/* Make the short transitional statement less dominant */
+.old-allegany-platform-page .proposal-content-panel .proposal-narrative-section[aria-labelledby="discussion-heading"] {
+    margin-top: 44px;
+    padding-top: 36px;
+}
+
+.old-allegany-platform-page #discussion-heading {
+    font-size: 1.08rem;
+    line-height: 1.75;
+    font-weight: 400;
+    margin-bottom: 0;
+}
+
+/* Keep the questions visually connected to that statement */
+.old-allegany-platform-page .proposal-content-panel > .proposal-section[aria-labelledby="questions-heading"] {
+    margin-top: 44px;
+    padding-top: 38px;
+    border-top: 1px solid rgba(51, 34, 20, 0.3);
+}
+
+.old-allegany-platform-page #questions-heading {
+    font-size: clamp(2rem, 3.2vw, 2.6rem);
+}
+
+/* Reduce the oversized closing section headings */
+.old-allegany-platform-page #negotiations-heading,
+.old-allegany-platform-page #final-heading {
+    font-size: clamp(1.9rem, 3.1vw, 2.45rem);
+    line-height: 1.2;
+}
+
+/* Give the campaign image and following section room */
+.old-allegany-platform-page .proposal-section[aria-labelledby="questions-heading"] + .proposal-narrative-section {
+    margin-top: 44px;
+    padding-top: 38px;
+}

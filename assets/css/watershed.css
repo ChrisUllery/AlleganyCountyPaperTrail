@@ -1,0 +1,20 @@
+/* Watershed Management page only */
+
+.watershed-platform-page .proposal-content-panel > .proposal-narrative-section:first-child {
+    margin-top: 0;
+    padding-top: 0;
+    border-top: 0;
+}
+
+.watershed-platform-page .proposal-action-box .proposal-action-text {
+    font-family: Georgia, "Times New Roman", serif;
+    font-weight: 400;
+}
+
+.watershed-platform-page .proposal-action-box .proposal-action-text strong {
+    font-weight: 700;
+}
+
+.watershed-platform-page .proposal-action-box + .proposal-goals {
+    margin-top: 24px;
+}
